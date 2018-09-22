@@ -4,22 +4,22 @@ Voici les étapes pour créer HomeFW, un point d'accès sans fil avec parefeu in
 1) Télécharger la dernière version de Raspbian Lite sur raspbian.org. Flasher l'image sur une carte SD au moyen du logiciel Etcher.  
 2) Installer Raspbian Lite puis, au premier démarrage, le mettre à niveau.
   
-  -> apt-get update && upgrade 
+> apt-get update && upgrade 
 
 3) Installer tous les logiciels nécessaires:
   
-  -> apt-get install hostapd isc-dhcp-server dnsmasq iptables rcconf
+> apt-get install hostapd isc-dhcp-server dnsmasq iptables rcconf
 
 4) Télécharger les fichiers de configuration depuis GitHub
 
--> git ...
+> git ...
 
 5) Modifiez les fichiers suivants:
 
-############################
-# /etc/hostapd/hostapd.conf
-##############################
+>/etc/hostapd/hostapd.conf
+
 -----------------START------------------
+
 interface=wlan1
 driver=nl80211
 ssid=IOT
@@ -31,13 +31,14 @@ wpa_key_mgmt=WPA-PSK
 wpa_pairwise=TKIP CCMP
 wpa_ptk_rekey=600
 #macaddr_acl=0
+
 -----------------END--------------------
 
 
-############################
-# /etc/dhcp/dhcpd.conf
-##############################
+> /etc/dhcp/dhcpd.conf
+
 -----------------START------------------
+
 #option domain-name "iot-firewall";
 #option domain-name-servers 8.8.8.8
 
@@ -53,49 +54,58 @@ option routers 10.10.0.1;
 option subnet-mask 255.255.255.0;
 interface wlan0;
 }
+
 -----------------END--------------------
 
 
-############################
-# /etc/sysctl.conf
-##############################
+> /etc/sysctl.conf
+
 you should have the following line
+
 -----------------START------------------
+
 net.ipv4.ip_forward=1
+
 -----------------END--------------------
 
 
-############################
-# /etc/default/isc-dhcp-server
-##############################
+> /etc/default/isc-dhcp-server
+
 you should have the following line
+
 -----------------START------------------
+
 INTERFACESv4="wlan0"
+
 -----------------END--------------------
 
 
-############################
-# /etc/default/hostapd
-##############################
+> /etc/default/hostapd
+
 you should have the following line
+
 -----------------START------------------
+
 DEAMON_CONF="/etc/hostapd/hostapd.conf"
+
 -----------------END--------------------
 
 
-############################
-# /etc/default/dnsmasq
-##############################
+> /etc/default/dnsmasq
+
 you should have the following line
+
 -----------------START------------------
+
 ENABLED=1
+
 -----------------END--------------------
 
 
-############################
-# /etc/network/interfaces
-##############################
+> /etc/network/interfaces
+
 -----------------START------------------
+
 # Include files from /etc/network/interfaces.d:
 source-directory /etc/network/interfaces.d
 
@@ -113,5 +123,6 @@ auto wlan0
 iface wlan0 inet static
 address 10.10.0.1
 netmask 255.255.255.0
+
 -----------------END--------------------
 
