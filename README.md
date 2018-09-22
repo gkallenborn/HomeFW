@@ -4,3 +4,4 @@ Voici les étapes pour créer HomeFW, un point d'accès sans fil avec parefeu in
 1) Télécharger la dernière version de Raspbian Lite sur raspbian.org. Flasher l'image sur une carte SD au moyen du logiciel Etcher.  
 2) Installer Raspbian Lite puis, au premier démarrage, le mettre à niveau.
 qsd qd 
+3) s
