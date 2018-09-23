@@ -11,7 +11,7 @@ Voici les étapes pour créer HomeFW, un point d'accès Wi-Fi avec parefeu inté
 
 4) Installez tous les logiciels nécessaires:
   
-`apt-get install hostapd isc-dhcp-server dnsmasq iptables rcconf`
+`sudo apt-get install hostapd isc-dhcp-server dnsmasq iptables rcconf`
 
 4) Téléchargez les fichiers de configuration depuis GitHub:
 
