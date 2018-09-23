@@ -37,3 +37,7 @@ sudo ./firewall.sh
 Si tout s'est bien passé, vous avez désormais un second réseau Wi-Fi baptisé "IOT" qui est complètement isolé de réseau existant. 
 
 **7)** Pour faciliter la gestion au quotidien de ce nouveau point d'accès, il serait commode que son système lance automatiquement le service SSH au démarrage. Ainsi, vous pourrez vous y connecter facilement à distance depuis le réseau de la box Internet et, par exemple, lancer ou modifier le script firewall.sh. Pour configurer le service SSH, il faut insérer la carte microSD dans votre ordinateur et créer un fichier vide intitulé "ssh" à la racine. Pour cela ouvrez une fenêtre de commande et placez vous à la racine de la carte. Sous Linux ou macOS, tapez `touch ssh`. Sous Windows, utilisez la commande `type NUL > ssh` (source: [Howchoo](https://howchoo.com/g/ote0ywmzywj/how-to-enable-ssh-on-raspbian-without-a-screen)).
+
+## Remerciements
+
+Cette installation s'appuie sur le travail et les explications de David Jacoby, chercheur en sécurité chez Kaspersky, qui a fait démonstration de cette technique à l'occasion d'une conférence presse organisée en 2017.   
