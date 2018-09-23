@@ -11,17 +11,17 @@ Voici les étapes pour créer HomeFW, un point d'accès sans fil avec parefeu in
   
 > apt-get install hostapd isc-dhcp-server dnsmasq iptables rcconf git
 
-4) Télécharger les fichiers de configuration depuis GitHub
+4) Télécharger les fichiers de configuration depuis GitHub:
 
 > git ...
 
-5) Modifiez les fichiers de configuration tel que indiqué dans configurations.txt
+5) Modifiez les fichiers de configuration tel que indiqué dans configurations.txt.
 
-6) Changez le mot de passe de votre Raspberry Pi 3
+6) Changez le mot de passe de votre Raspberry Pi 3:
 
 > passwd
 
-7) Activez le démarrage automatique du service SSH
+7) Activez le démarrage automatique du service SSH:
 
 > rcconf
 
