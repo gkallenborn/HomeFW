@@ -28,6 +28,7 @@ Voici les étapes pour créer HomeFW, un point d'accès sans fil avec parefeu in
 8) Rendez le fichier firewall exécutable, puis exécutez le:
 
 > chmod +x firewall.sh
+
 > sudo ./firewall.sh
 
 
