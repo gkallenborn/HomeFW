@@ -5,30 +5,30 @@ Voici les étapes pour créer HomeFW, un point d'accès sans fil avec parefeu in
 
 2) Installez Raspbian ou Rasbian Lite puis, au premier démarrage, le mettre à niveau.
   
-> apt-get update && apt-get upgrade 
+`apt-get update && apt-get upgrade` 
 
 3) Installez tous les logiciels nécessaires:
   
-> apt-get install hostapd isc-dhcp-server dnsmasq iptables rcconf git
+`apt-get install hostapd isc-dhcp-server dnsmasq iptables rcconf git`
 
 4) Téléchargez les fichiers de configuration depuis GitHub:
 
-> git ...
+`git ...`
 
 5) Modifiez les fichiers de configuration tel que indiqué dans configurations.txt.
 
 6) Changez le mot de passe de votre Raspberry Pi 3:
 
-> passwd
+`passwd`
 
 7) Activez le démarrage automatique du service SSH, ce qui vous permettra d'accéder à distance au Rasperry Pi 3 depuis le réseau de la box:
 
-> rcconf
+`rcconf`
 
 8) Rendez le fichier firewall exécutable, puis exécutez le:
 
-> chmod +x firewall.sh
-
-> sudo ./firewall.sh
-
+```
+chmod +x firewall.sh
+sudo ./firewall.sh
+```
 
