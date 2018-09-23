@@ -17,7 +17,7 @@ Voici les étapes pour créer HomeFW, un point d'accès Wi-Fi avec parefeu inté
 
 ```
 sudo nano /etc/hostapd/hostapd.conf
-sudo nano /etc/dhcp/dhcp.conf
+sudo nano /etc/dhcp/dhcpd.conf
 sudo nano /etc/sysctl.conf
 sudo nano /etc/default/isc-dhcp-server
 sudo nano /etc/default/hostapd
