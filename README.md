@@ -40,4 +40,4 @@ Si tout s'est bien passé, vous avez désormais un second réseau Wi-Fi baptisé
 
 ## Remerciements
 
-Cette installation s'appuie sur le travail et les explications de David Jacoby, chercheur en sécurité chez Kaspersky Labs, qui a fait démonstration de cette technique à l'occasion d'une conférence presse organisée en 2017.   
+Cette installation s'appuie sur le code et les explications de David Jacoby, chercheur en sécurité chez Kaspersky Labs, qui a fait démonstration de cette technique à l'occasion d'une conférence presse organisée en 2017.   
