@@ -25,15 +25,11 @@ sudo nano /etc/default/dnsmasq
 sudo nano /network/interfaces
 ```
 
-6) Changez le mot de passe de votre Raspberry Pi 3:
-
-`passwd`
-
-7) Activez le démarrage automatique du service SSH, ce qui vous permettra d'accéder à distance au Rasperry Pi 3 depuis le réseau de la box:
+6) Activez le démarrage automatique du service SSH, ce qui vous permettra d'accéder à distance au Rasperry Pi 3 depuis le réseau de la box:
 
 `rcconf`
 
-8) Rendez le fichier firewall exécutable, puis exécutez le:
+7) Rendez le fichier firewall exécutable, puis exécutez le:
 
 ```
 chmod +x firewall.sh
