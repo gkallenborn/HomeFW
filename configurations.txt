@@ -1,8 +1,11 @@
 ############################
 # /etc/hostapd/hostapd.conf
 ##############################
+créez le fichier avec les lignes suivantes
+en remplaçant "password" par un mot de passe
+de votre choix
 -----------------START------------------
-interface=wlan1
+interface=wlan0
 driver=nl80211
 ssid=IOT
 hw_mode=g
@@ -20,6 +23,7 @@ wpa_ptk_rekey=600
 ############################
 # /etc/dhcp/dhcpd.conf
 ##############################
+insérez dans le fichier existant les lignes suivantes
 -----------------START------------------
 #option domain-name "iot-firewall";
 #option domain-name-servers 8.8.8.8
@@ -31,7 +35,7 @@ subnet 10.10.0.0 netmask 255.255.255.0 {
 range 10.10.0.100 10.10.0.150;
 default-lease-time 600;
 max-lease-time 7200;
-#option domain-name-servers 8.8.4.4;
+option domain-name-servers 8.8.8.8;;
 option routers 10.10.0.1;
 option subnet-mask 255.255.255.0;
 interface wlan0;
@@ -43,7 +47,7 @@ interface wlan0;
 ############################
 # /etc/sysctl.conf
 ##############################
-you should have the following line
+enlevez le # devant la ligne suivante ou créez la
 -----------------START------------------
 net.ipv4.ip_forward=1
 -----------------END--------------------
@@ -53,7 +57,7 @@ net.ipv4.ip_forward=1
 ############################
 # /etc/default/isc-dhcp-server
 ##############################
-you should have the following line
+complétez la ligne suivante
 -----------------START------------------
 INTERFACESv4="wlan0"
 -----------------END--------------------
@@ -63,7 +67,7 @@ INTERFACESv4="wlan0"
 ############################
 # /etc/default/hostapd
 ##############################
-you should have the following line
+complétez la ligne suivante
 -----------------START------------------
 DEAMON_CONF="/etc/hostapd/hostapd.conf"
 -----------------END--------------------
@@ -73,7 +77,7 @@ DEAMON_CONF="/etc/hostapd/hostapd.conf"
 ############################
 # /etc/default/dnsmasq
 ##############################
-you should have the following line
+vérifiez que vous ayez la ligne suivante
 -----------------START------------------
 ENABLED=1
 -----------------END--------------------
@@ -83,6 +87,7 @@ ENABLED=1
 ############################
 # /etc/network/interfaces
 ##############################
+ajoutez les lignes suivantes
 -----------------START------------------
 # Include files from /etc/network/interfaces.d:
 source-directory /etc/network/interfaces.d
