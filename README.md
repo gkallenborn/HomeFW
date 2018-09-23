@@ -5,7 +5,7 @@ Voici les étapes pour créer HomeFW, un point d'accès Wi-Fi avec parefeu inté
 
 2) Au premier démarrage, le système vous demandera de choisir la langue et de changer de mot de passe. Choisissez en un qui soit fort, car il servira plus tard à initier des connexions SSH. Le système va ensuite se mettre automatique à jour. 
 
-3) Installez tous les logiciels nécessaires:
+3) Ouvrez une fenêtre de commandes et installez tous les logiciels nécessaires:
   
 `apt-get install hostapd isc-dhcp-server dnsmasq iptables rcconf git`
 
