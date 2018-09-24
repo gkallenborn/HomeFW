@@ -40,6 +40,6 @@ Si tout s'est bien passé, vous avez désormais un second réseau Wi-Fi baptisé
 
 **7)** Pour faciliter la gestion au quotidien de ce nouveau point d'accès, il est préférable que le service SSH soit lancé automatiquement au démarrage. Ainsi, on pourra s'y connecter facilement à distance depuis le réseau de la box Internet et, par exemple, lancer ou modifier le script firewall.sh. Pour configurer le service SSH, il faut insérer la carte microSD dans votre ordinateur et créer un fichier vide intitulé "ssh" à la racine. Pour cela ouvrez une fenêtre de commande et placez vous à la racine de la carte. Sous Linux ou macOS, tapez `touch ssh`. Sous Windows, utilisez la commande `type NUL > ssh` (source: [Howchoo](https://howchoo.com/g/ote0ywmzywj/how-to-enable-ssh-on-raspbian-without-a-screen)).
 
-## Remerciements
+## Remerciement
 
 Cette installation s'appuie sur le code et les explications de David Jacoby, chercheur en sécurité chez Kaspersky Labs, qui a fait démonstration de cette technique à l'occasion d'une conférence de presse organisée en 2017.   
