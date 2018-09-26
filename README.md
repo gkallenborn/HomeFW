@@ -18,7 +18,7 @@ HomeFW est un point d'accès Wi-Fi avec parefeu intégré, basé sur Raspberry P
   
 `sudo apt-get install hostapd isc-dhcp-server dnsmasq iptables`
 
-**5)** Modifiez les fichiers de configuration tel que indiqué dans configurations.txt:
+**5)** Modifiez les fichiers de configuration tel que indiqué dans configurations.txt, et redémarrez le système:
 
 ```
 sudo nano /etc/hostapd/hostapd.conf
@@ -28,6 +28,7 @@ sudo nano /etc/default/isc-dhcp-server
 sudo nano /etc/default/hostapd
 sudo nano /etc/default/dnsmasq
 sudo nano /network/interfaces
+reboot
 ```
 
 **6)** Allez dans le dossier HomeFW, rendez le fichier firewall exécutable, puis exécutez le:
