@@ -34,6 +34,7 @@ reboot
 **6)** Allez dans le dossier HomeFW, rendez le fichier firewall exécutable, puis exécutez le:
 
 ```
+cd HomeFW
 chmod +x firewall.sh
 sudo ./firewall.sh
 ```
