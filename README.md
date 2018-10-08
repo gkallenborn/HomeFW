@@ -27,7 +27,7 @@ sudo nano /etc/sysctl.conf
 sudo nano /etc/default/isc-dhcp-server
 sudo nano /etc/default/hostapd
 sudo nano /etc/default/dnsmasq
-sudo nano /network/interfaces
+sudo nano /etc/network/interfaces
 reboot
 ```
 
