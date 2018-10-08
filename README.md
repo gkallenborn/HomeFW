@@ -12,7 +12,7 @@ HomeFW est un point d'accès Wi-Fi avec parefeu intégré, basé sur Raspberry P
 
 **3)** Ouvrez une fenêtre de commandes et téléchargez le script pour le pare-feu (firewall.sh) et le fichier de configuration (configurations.txt) dans un nouveau dossier intitulé HomeFW:
 
-`git clone https://github/gkallenborn/HomeFW HomeFW`
+`git clone https://github.com/gkallenborn/HomeFW HomeFW`
 
 **4)** Installez tous les logiciels nécessaires:
   
