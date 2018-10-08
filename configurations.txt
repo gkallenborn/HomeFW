@@ -23,7 +23,7 @@ wpa_ptk_rekey=600
 ############################
 # /etc/dhcp/dhcpd.conf
 ##############################
-insérez dans le fichier existant les lignes suivantes
+insérez au début les lignes suivantes et effacez le reste
 -----------------START------------------
 #option domain-name "iot-firewall";
 #option domain-name-servers 8.8.8.8
@@ -35,7 +35,7 @@ subnet 10.10.0.0 netmask 255.255.255.0 {
 range 10.10.0.100 10.10.0.150;
 default-lease-time 600;
 max-lease-time 7200;
-option domain-name-servers 8.8.8.8;;
+option domain-name-servers 8.8.8.8;
 option routers 10.10.0.1;
 option subnet-mask 255.255.255.0;
 interface wlan0;
@@ -87,7 +87,7 @@ ENABLED=1
 ############################
 # /etc/network/interfaces
 ##############################
-ajoutez les lignes suivantes
+insérez au début les lignes suivantes et effacez le reste
 -----------------START------------------
 # Include files from /etc/network/interfaces.d:
 source-directory /etc/network/interfaces.d
@@ -98,9 +98,8 @@ iface eth0 inet dhcp
 #wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 iface default inet dhcp
 
-#########################
 # IP ADDRESS FOR IOT FW #
-#########################
+
 allow-hotplug wlan0
 auto wlan0
 iface wlan0 inet static
