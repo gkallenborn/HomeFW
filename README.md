@@ -1,6 +1,6 @@
 # HomeFW
 
-HomeFW est un point d'accès Wi-Fi avec parefeu intégré, basé sur Raspberry Pi 3. L'appareil se branche directement en filaire sur la box Internet et permet de créer un sous-réseau Ethernet sans fil, isolé du réseau existant. Les appareils qui sont connectés à HomeFW peuvent accéder à Internet mais ne peuvent pas accéder aux terminaux connectés à la box. Inversement, les appareils connectés au réseau de la box ne peuvent accéder au réseau géré par le boîtier Raspberry Pi.
+HomeFW est un point d'accès Wi-Fi avec parefeu intégré, basé sur Raspberry Pi 3. L'appareil se branche directement en filaire sur la box Internet et permet de créer un sous-réseau Ethernet sans fil, isolé du réseau existant. Les appareils qui sont connectés à HomeFW peuvent accéder à Internet mais ne peuvent pas accéder aux terminaux connectés à la box. Inversement, les appareils connectés au réseau de la box ne peuvent accéder au réseau géré par le boîtier Raspberry Pi. Plus d'informations sur [01net.com](https://www.01net.com/astuces/comment-securiser-son-reseau-domestique-avec-un-raspberry-pi-3-1532277.html). 
 
 ![alt text](https://github.com/gkallenborn/HomeFW/blob/master/HomeFW.jpg)
 
