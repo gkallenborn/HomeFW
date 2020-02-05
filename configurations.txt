@@ -65,16 +65,6 @@ INTERFACESv4="wlan0"
 
 
 ############################
-# /etc/default/hostapd
-##############################
-complétez la ligne suivante
------------------START------------------
-DEAMON_CONF="/etc/hostapd/hostapd.conf"
------------------END--------------------
-
-
-
-############################
 # /etc/default/dnsmasq
 ##############################
 vérifiez que vous ayez la ligne suivante
@@ -103,6 +93,7 @@ iface default inet dhcp
 allow-hotplug wlan0
 auto wlan0
 iface wlan0 inet static
+hostapd /etc/hostapd/hostapd.conf
 address 10.10.0.1
 netmask 255.255.255.0
 -----------------END--------------------
