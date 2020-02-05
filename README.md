@@ -25,7 +25,6 @@ sudo nano /etc/hostapd/hostapd.conf
 sudo nano /etc/dhcp/dhcpd.conf
 sudo nano /etc/sysctl.conf
 sudo nano /etc/default/isc-dhcp-server
-sudo nano /etc/default/hostapd
 sudo nano /etc/default/dnsmasq
 sudo nano /etc/network/interfaces
 reboot
